@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, StyleSheet, Text, View, TouchableOpacity, Button } from 'react-native';
+import {Image, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import Title from '../components/title';
 
 const Home = ({navigation}) => {
@@ -16,7 +16,7 @@ const Home = ({navigation}) => {
             />
             </View>
             <TouchableOpacity onPress={() => navigation.navigate("Quiz")} style={styles.button}>
-                <Text>Start</Text>
+                <Text style ={styles.buttonText}>Start</Text>
             </TouchableOpacity>
         </View>
     );
@@ -28,14 +28,18 @@ const styles = StyleSheet.create({
     banner:{
         height: 300,
         width: 300,
+        
     },
     bannerContainer:{
         justifyContent:'center',
         alignItems:'center',
+        flex: 1,
     },
     container:{
         paddingTop: 50,
         paddingHorizontal: 40,
+        height: "100%",
+    
     },
     button:{
         width: '100%',
@@ -44,6 +48,12 @@ const styles = StyleSheet.create({
         borderRadius: 16,
         justifyContent: 'center',
         alignItems: 'center',
+        marginBottom: 30,
+    },
+    buttonText:{
+        fontSize: 30,
+        fontWeight: '600',
+        color: "white",
     },
 });
 

@@ -38,5 +38,9 @@ bannerContainer:{
     justifyContent:'center',
     alignItems:'center',
 },
-
+container:{
+    paddingTop: 50,
+    paddingHorizontal: 40,
+    height: "100%",
+},
 });
